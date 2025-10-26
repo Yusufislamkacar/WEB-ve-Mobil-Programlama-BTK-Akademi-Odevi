@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                border-color: indianred;
+                border-style: solid;
+            }
+            #buyuk{
+                width: 200px;
+                height: 100px;
+                background-color: lightcoral;
+                z-index: 1;/*z-index hangi kutunun onde olacagini belirler*/
+                border-radius: 5px 20px;/*kutu kenarlarinin yuvarlak olmasi*/
+                border-width: 5px 10px 20px 40px;/*kutu kenarlarinin kalinligi*/
+                
+            }
+            #kucuk{
+                width: 100px;
+                height: 50px;
+                background-color: lightseagreen;
+                position: relative;
+                top: -20px;
+                z-index: -1;
+            }
+        </style>
+    </head>
+     <body>
+        <img src="resim\kutuKonumu.png" alt="yok" width="1000">
+        <div id="buyuk">
+            
+        </div>
+        <div id="kucuk">
+
+        </div>
+    </body>
+</html>
