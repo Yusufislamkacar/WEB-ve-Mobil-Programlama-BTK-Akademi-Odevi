@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS ogreniyorum :)</title>
+        <style>
+            div{
+                border-style: solid;
+                border-width: 5px;
+            }
+        #big-box{
+            border-color: red;
+            background-color: blue;
+            width: 300px;
+            height: 200px;
+
+            position:relative;
+            left: 50px;
+        }
+        #small-box{
+            border-color: blue;
+            background-color: red;
+            width: 150px;
+            height: 50px;
+
+            position:relative;/*Varsayilan olarak statik ayarindadir. Burada konumunu goreceliye cevirdik. Sonrasinda konumunu degistirebilecegiz.*/
+            top: 30px;
+            left: 50px;
+        }
+        #another-box{
+            width: 150px;
+            text-align: center ;
+            position:fixed;
+            bottom: 0px;
+            right: 0px;/*sayfanin sag alt kosesine sabitlendi.*/
+        }
+        #another-big-box{/*absulte icin olusturduk. Yapamadim.*/
+            border-color: red;
+            background-color: blue;
+            width: 300px;
+            height: 200px;
+        }
+        #inner-box{
+            width: 150px;
+            height: 50px;
+            text-align: center ;
+            position: absolute;/*bir kutuyu diger kutunun icine sabitleme.*/
+            bottom: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="big-box">
+            This is my big box.
+        </div>
+         <div id="small-box">
+            This is my small box.
+        </div>
+        <div id="another-box">
+            a different box
+        </div>
+        <br><br><br>
+        <div id="inner-box">
+            a inner box
+        </div>
+        <div id="another-big-box">
+            a big box
+        </div>
+    </body>
+</html>
