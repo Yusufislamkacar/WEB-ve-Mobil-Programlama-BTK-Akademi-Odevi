@@ -1,0 +1,118 @@
+/*The boxs are fixed width*/
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Boxs width*/
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+/*row*/
+
+.row{
+    border: blue solid 2px;
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*row not sidebyside*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*responsible image*/
+img{
+    width: 100%;
+    height: auto;
+}
+
+/*float col*/
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+    /*border: 1px solid red;*/
+    /*background-color: white;*/
+    border-radius: 20px;
+}
+
+/*for less than 500px */
+@media screen and (max-width:500px){
+    [class*="col-"]{width: 100%;}
+}
+
+/*boxs height*/
+#top{
+    min-height: 50px;
+}
+#menu{
+    min-height: 80px;
+}
+#center{
+    min-height: 400px;
+}
+#footer{
+    min-height: 80px;
+}
+#socialicon{
+    width: 120px;
+    float: right;
+}
+
+/*Main menu*/
+#menu #mainmenu ul{
+    list-style-type: none;
+}
+#menu #mainmenu ul li{
+    /*border: 1px solid blue;*/
+    width: 25%;
+    float: left;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+/*responsibe button*/
+@media screen and (max-width:500px){
+    #menu #mainmenu ul li{width: 100%;}
+}
+
+/*main menu links*/
+
+#menu #mainmenu a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#menu #mainmenu a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+#menu #mainmenu a:active{
+    color: gray;
+}
+/*footer*/
+#footer #bottommenu p{
+    text-align: center;
+
+}
