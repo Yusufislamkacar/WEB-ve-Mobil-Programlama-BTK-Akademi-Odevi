@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;/*kutularin genisligini sabit tutmaya yarar.*/
+}
+#container{
+    border: palevioletred solid 3px;
+    width: 90%;
+    margin: auto;
+}
+#logo{
+    border: green dashed 1px;
+    width: 100%;
+    height: 50px;
+}
+#main{
+    border: firebrick dashed 1px;
+    width: 100%;
+    height: 50px;
+}
+#content{
+    border: gold dotted 1px;
+    width: 70%;
+min-height: 500px;
+background-color: gray;
+float: left;
+}
+#sidemenu{
+border: greenyellow solid 1px;
+width: 30%;
+min-height: 500px;
+background-color: blueviolet;
+float: left;
+}
+#submenu{
+    border: indigo dashed 1px;
+    width: 100%;
+    height: 50px;
+    background-color: ivory;
+    float: left;
+}
